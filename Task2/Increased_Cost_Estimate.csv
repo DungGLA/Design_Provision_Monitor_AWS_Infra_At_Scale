@@ -1,0 +1,32 @@
+Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,18158.7,217904.4,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1975.088,23701.06,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (t3.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,525.6,6307.2,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (c5.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,938,11256,USD,,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,240.95,2891.4,USD,,"S3 Standard storage (10000 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (10000), GET, SELECT, and all other requests from S3 Standard (10000), Data returned by S3 Select (7000 GB per month), Data scanned by S3 Select (3000 GB per month)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,603.5,7242,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (1), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,1865.7,22388.4,USD,,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1184.43,14213.16,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,1111.43,13337.16,USD,,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (250 GB per hour), Average number of new TCP connections (150 per second), Average TCP connection duration (10 seconds)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4816,57792,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Total Size of Backup Processed for Export (GB) ( per month)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,3118,37416,USD,,"Number of Metrics (includes detailed and custom metrics) (2000), GetMetricData: Number of metrics requested (), Standard Logs: Data Ingested (2000 GB), Logs Delivered to CloudWatch Logs: Data Ingested (2000 GB), Logs Delivered to S3: Data Ingested (2000 GB)"
+My Estimate,US East (N. Virginia),,AWS Web Application Firewall (WAF),0,1780,21360,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (20 per month), Number of Rules added per Web ACL (20 per month), Number of Rule Groups per Web ACL (20 per month), Number of Rules inside each Rule Group (2 per month), Number of Managed Rule Groups per Web ACL (1 per month)"
+,,,,,,,,,
+,,,,,EC2: increased number of instances from 6 to 8 for the web servers and 6 to 8 for the Application Servers,,,,
+,,,,,Route 53: increated number of Elastic Network Instances from 5 to 10 and increate number of basic checks ,,,,
+,,,,,S3: increated number of S3 standard storage,,,,
+,,,,,VPC: increated number of NAT Gateways from 1 to 2. One per AZ.,,,,
+,,,,,Application Load Balancer: increated number of processed GB each month (EC2 and IP),,,,
+,,,,,Network Load Balancer: increated number of processed GB each month (NLB for TCP),,,,
+,,,,,RDS: Change pricing model to on-demand and increate storage amount,,,,
+,,,,,CloudWatch: Add number of logs and metrics,,,,
+,,,,,WAF: introduced WAF,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
